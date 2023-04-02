@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Static</title>
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./github-markdown.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="../src/ofa.js"></script>
+    <script src="./components/theme-button/theme-button.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">KnowGen</div>
+        <ul class="main-menu">
+          <li>
+            <a href="">Docs</a>
+          </li>
+          <li>
+            <a href="">Guides</a>
+          </li>
+        </ul>
+        <div class="header-menu">
+          <theme-button></theme-button>
+        </div>
+      </div>
+    </header>
+    <div class="article-actions-container">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a class="breadcrumb" href="/en-US/docs/Learn"
+              ><span property="name">Guides</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="breadcrumb"
+              href="/en-US/docs/Learn/Getting_started_with_the_web"
+              ><span property="name">Getting started with the web</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="breadcrumb-current-page"
+              href="/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+              ><span property="name">JavaScript basics</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-article">
+      <article class="markdown-body">
+        <h1 id="ofajs">ofajs</h1>
+        <p>
+          ofajs 是新时代前端渐进式框架；基于 Web Components
+          和完全异步的模块化方案；
+        </p>
+
+        <p>
+          与传统前端框架不一样，ofajs是
+          <strong>面向开发友好型</strong>
+          的框架，完全基于浏览器运行，不需要nodejs开发环境；（因此不需要学习npm和webpack之类的）
+        </p>
+
+        <p>
+          如果你被现有前端技术栈劝退过（被脚手架、nodejs或npm之类的知识点迷惑），可以试试
+          ofajs；
+        </p>
+        <p>
+          <a href="https://github.com/kirakiray/ofa.js" target="_blank"
+            >仓库地址</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/kirakiray/ofa.js/issues" target="_blank"
+            >Bug报告</a
+          >
+        </p>
+        <h2 id="理念">理念</h2>
+        <p>拥抱浏览器才是拥抱真正的生态；</p>
+        <h2 id="特点">特点</h2>
+        <ul>
+          <li>非常快速的学习曲线；</li>
+          <li>
+            集成模块化、模板语法、数据同步、路由化和微前端方案，一站式解决所有问题；
+          </li>
+          <li>min体积只有41kb；(min+zip为14kb)</li>
+        </ul>
+        <h3 id="定位">定位</h3>
+        <p>
+          <strong>银弹型</strong
+          >前端框架；既能像jQuery那样，快速开发单独功能或页面；也能像Vue/React/Angular那样，开发大型高级项目；
+        </p>
+        <blockquote>
+          <p>虽然作者开发 ofajs 的初衷是方便开发工具类软件的框架</p>
+        </blockquote>
+        <p>
+          ofajs是尽量和原生web贴近，在原生基础上增加更易用的api；而其它前端框架，是重新封装api，编译成web；
+        </p>
+        <h3 id="ofajs-和现有前端框架的区别">ofajs 和现有前端框架的区别</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>框架</th>
+              <th>工作执行重心</th>
+              <th>脚本语言</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ofajs</td>
+              <td>浏览器执行</td>
+              <td>js</td>
+            </tr>
+            <tr>
+              <td>Vue</td>
+              <td>nodejs编译 + 浏览器执行</td>
+              <td>js,ts</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>nodejs编译 + 浏览器执行</td>
+              <td>js,jsx,ts</td>
+            </tr>
+            <tr>
+              <td>Angular</td>
+              <td>nodejs编译 + 浏览器执行</td>
+              <td>ts</td>
+            </tr>
+            <tr>
+              <td>svelte</td>
+              <td>nodejs编译</td>
+              <td>js,ts</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="案例">案例</h3>
+        <p>
+          <a
+            href="https://kirakiray.github.io/o-book/website/index.html"
+            target="_blank"
+            ><strong>o-book</strong>-最简单的书籍网站生成框架</a
+          >
+        </p>
+        <h3 id="导航">导航</h3>
+        <p><a href="docs/chapter1/guide.md">开始学习</a></p>
+        <p><a href="docs/other/why_create_ofajs.md">为什么开发ofajs</a></p>
+        <p><a href="docs/other/believe_in_ofajs.md">关于ofajs</a></p>
+      </article>
+    </div>
+    <footer>
+      <div class="container">asdasd</div>
+    </footer>
+  </body>
+</html>

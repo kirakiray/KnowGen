@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../font/iconfont.css" />
+
+<style>
+  .menu-button {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 16px;
+  }
+  .menu-button span {
+    font-size: 20px;
+  }
+  .menu-button:hover {
+    background-color: var(--header-menu-hover-color);
+  }
+</style>
+
+<div class="menu-button" @click="changeTheme">
+  <span class="icon-baitianmoshi iconfont" #if="theme === 'light'"></span>
+  <span class="icon-heiyemoshi iconfont" #else></span>
+</div>

@@ -1,0 +1,44 @@
+{
+  "id": "3991838",
+  "name": "KnowGen",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "248980",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "736833",
+      "name": "language",
+      "font_class": "language",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "32336536",
+      "name": "黑夜模式",
+      "font_class": "heiyemoshi",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "32336537",
+      "name": "白天模式",
+      "font_class": "baitianmoshi",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "34453038",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e840",
+      "unicode_decimal": 59456
+    }
+  ]
+}

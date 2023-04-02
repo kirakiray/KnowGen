@@ -1,0 +1,109 @@
+@import "dark.css";
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  font: 400 1em/1.8 -apple-system, BlinkMacSystemFont, Segoe UI, Microsoft Yahei, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --header-font-color: #4e4e4e;
+  --header-menu-hover-color: rgba(238, 238, 238, 0.8);
+  --footer-bg-color: #f9f9f9;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  height: 58px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header-menu {
+  margin-left: auto;
+  color: var(--header-font-color);
+}
+.main-article {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.main-article article {
+  max-width: 800px;
+  margin: 0 14px;
+}
+.article-actions-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  background-color: #f9f9fb;
+  border-top: #cdcdcd solid 0.5px;
+  border-bottom: #cdcdcd solid 0.5px;
+}
+.main-menu {
+  display: flex;
+  list-style: none;
+}
+.main-menu li {
+  margin: 0 14px;
+}
+.main-menu a {
+  text-decoration: none;
+  color: var(--header-font-color);
+}
+.main-menu a:hover {
+  text-decoration: underline;
+}
+.breadcrumb-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+}
+.breadcrumb-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+}
+.breadcrumb-list li:after {
+  display: inline-block;
+  font-family: "iconfont" !important;
+  content: "\e840";
+  font-size: 14px;
+  color: #b3b3b3;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 12px;
+}
+.breadcrumb-list li:last-child:after {
+  display: none;
+}
+.breadcrumb-list a {
+  color: var(--header-font-color);
+  text-decoration: none;
+}
+.breadcrumb-list a:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-top: 24px;
+  padding: 24px 0;
+  background-color: var(--footer-bg-color);
+}
