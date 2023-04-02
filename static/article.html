@@ -6,53 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article Static</title>
     <link rel="stylesheet" href="./font/iconfont.css" />
-    <link rel="stylesheet" href="./github-markdown.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/github-markdown.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="../src/ofa.js"></script>
-    <script src="./components/theme-button/theme-button.js"></script>
+    <script src="./components/k-header/k-header.js"></script>
+    <script src="./components/k-breadcrumbs/k-breadcrumbs.js"></script>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">KnowGen</div>
-        <ul class="main-menu">
-          <li>
-            <a href="">Docs</a>
-          </li>
-          <li>
-            <a href="">Guides</a>
-          </li>
-        </ul>
-        <div class="header-menu">
-          <theme-button></theme-button>
-        </div>
-      </div>
-    </header>
-    <div class="article-actions-container">
-      <div class="container">
-        <ul class="breadcrumb-list">
-          <li>
-            <a class="breadcrumb" href="/en-US/docs/Learn"
-              ><span property="name">Guides</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="breadcrumb"
-              href="/en-US/docs/Learn/Getting_started_with_the_web"
-              ><span property="name">Getting started with the web</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="breadcrumb-current-page"
-              href="/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
-              ><span property="name">JavaScript basics</span></a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
+    <k-header>
+      <a href="">Docs</a>
+      <a href="">Guides</a>
+    </k-header>
+    <k-breadcrumbs>
+      <a href="/en-US/docs/Learn"><span property="name">Guides</span></a>
+      <a href="/en-US/docs/Learn/Getting_started_with_the_web"
+        ><span property="name">Getting started with the web</span></a
+      >
+
+      <a href="/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+        ><span property="name">JavaScript basics</span></a
+      >
+    </k-breadcrumbs>
     <div class="main-article">
       <article class="markdown-body">
         <h1 id="ofajs">ofajs</h1>

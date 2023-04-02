@@ -1,0 +1,42 @@
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  height: 58px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+.header-menu {
+  margin-left: auto;
+  color: var(--header-font-color);
+}
+.main-menu {
+  display: flex;
+  list-style: none;
+}
+.main-menu a {
+  text-decoration: none;
+  color: var(--header-font-color);
+}
+.main-menu a:hover {
+  text-decoration: underline;
+}
+::slotted(a) {
+  margin: 0 14px;
+  text-decoration: none;
+  color: var(--header-font-color);
+}
+::slotted(a:hover) {
+  text-decoration: underline;
+}
