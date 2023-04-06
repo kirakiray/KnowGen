@@ -1,0 +1,122 @@
+.pannel {
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
+  padding: 14px;
+  --active-color: #1e79e1;
+}
+.pannel ul,
+.pannel li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pannel li {
+  position: relative;
+  margin: 4px 0;
+  line-height: 25px;
+  font-size: 14px;
+}
+.pannel li > ul,
+.pannel li div > ul {
+  margin-left: 20px;
+}
+.pannel li > ul > li,
+.pannel li div > ul > li {
+  display: none;
+}
+.pannel li > ul > li:first-child,
+.pannel li div > ul > li:first-child {
+  display: block;
+}
+.pannel li > ul .marker,
+.pannel li div > ul .marker {
+  display: block;
+  height: 2px;
+  width: 12px;
+  top: 12px;
+  left: -16px;
+}
+.pannel li > ul .marker:before,
+.pannel li div > ul .marker:before {
+  bottom: -12px;
+  left: 0px;
+  font-size: 16px;
+  content: "\eb08";
+}
+.pannel li .marker {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  width: 2px;
+  height: calc(100% - 6px);
+  background-color: #bebebe;
+}
+.pannel li .marker:before {
+  position: absolute;
+  bottom: -10px;
+  left: -6px;
+  display: block;
+  font-family: iconfont;
+  content: "\eb0a";
+  color: #bebebe;
+}
+.pannel li:last-child .marker {
+  display: none !important;
+}
+.pannel li:before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: #929292 solid 1px;
+  border-radius: 3px;
+  z-index: 2;
+}
+.pannel li:last-child:after {
+  display: none;
+}
+.pannel li a {
+  display: inline-block;
+  padding: 0 6px;
+  margin-left: 12px;
+  border-radius: 4px;
+  max-width: 200px;
+  color: inherit;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+.pannel li a:hover {
+  text-decoration: underline;
+}
+.pannel li.active > a {
+  background-color: rgba(0, 119, 255, 0.102);
+}
+.pannel li.active:before {
+  border-color: var(--active-color);
+  background-color: var(--active-color);
+}
+.pannel li.active > .marker {
+  display: block;
+}
+.pannel li.viewed:before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: var(--active-color) solid 1px;
+  border-radius: 3px;
+}
+.pannel li.viewed .marker {
+  display: block;
+  background-color: var(--active-color);
+}
+.pannel li.viewed .marker:before {
+  color: var(--active-color);
+}

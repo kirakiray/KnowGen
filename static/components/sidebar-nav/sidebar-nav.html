@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="./sidebar-nav.css" />
+<div class="pannel" fill:li="list"></div>
+
+<li temp:li class="viewed">
+  <span class="marker"></span>
+  <a href="">{{$data.name}}</a>
+  <ul #if="$data.childs" fill:li="$data.childs"></ul>
+</li>
